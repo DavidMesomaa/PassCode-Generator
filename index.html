@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pass_Code</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Pass_Code <span>Generator</span></h1>
+        <input type="text" value="Pa$$" id="password-display" class="fa fa-copy" readonly>
+        <i class="fa fa-copy" id="copy-icon"></i>
+        <form id="password-form" class="form">
+            <label for="uppercase">Include Uppercase</label>
+            <input type="checkbox" id="include-uppercase">
+            <label for="numbers">Include Numbers</label>
+            <input type="checkbox" id="include-numbers">
+            <label for="symbols">Include Symbols</label>
+            <input type="checkbox" id="include-symbols">
+            <label for="number-of-characters">Number Of Characters</label>
+            <input type="number" min="1" max="50" value="10" class="number-input" id="character-amount">
+
+            <button type="submit" class="btn">Generate Pass_Code</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
